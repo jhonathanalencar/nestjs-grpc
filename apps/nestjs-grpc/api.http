@@ -1,0 +1,19 @@
+// @name Get-Orders
+GET http://localhost:3000/orders?account_id=1234
+
+###
+
+// @name Get-Order
+GET http://localhost:3000/orders/6529dda952acc58c72c9e103
+
+###
+
+// @name Create-Order
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "account_id": "1234",
+  "asset_id": "xpto11",
+  "quantity": 100
+}
